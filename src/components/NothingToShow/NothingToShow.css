@@ -1,0 +1,22 @@
+.novideos {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.novideos__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.img-container {
+  height: 15rem;
+}
+.img-container > img {
+  width: 100%;
+  height: 100%;
+}
+.novideos .btn:hover {
+  color: var(--black-color);
+}

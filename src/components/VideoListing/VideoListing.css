@@ -1,0 +1,34 @@
+.explore {
+  align-items: start;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.chips-container {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 5rem;
+  z-index: 9;
+  background-color: var(--background-color);
+  border-top: 0.1rem solid var(--white-color);
+  border-bottom: 0.1rem solid var(--white-color);
+}
+
+.videos-container {
+  width: 100%;
+}
+
+@media only screen and (max-width: 48em) {
+  .explore {
+    padding: 0.5rem;
+  }
+  .chips-container {
+    padding: 1rem;
+  }
+}
