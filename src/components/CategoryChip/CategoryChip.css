@@ -1,0 +1,13 @@
+.chip {
+  border: 0.1rem solid var(--white-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.chip:hover,
+.chip--active {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-color: var(--black-color);
+}
