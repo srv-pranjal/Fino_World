@@ -66,3 +66,13 @@ legend {
 .profile .btn:hover {
   color: var(--black-color);
 }
+
+@media screen and (max-width: 34em) {
+  .profile {
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+  .profile__card {
+    max-width: 85%;
+  }
+}

@@ -147,4 +147,8 @@
   .signup {
     height: calc(100vh - 5rem);
   }
+  .authentication {
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
 }
