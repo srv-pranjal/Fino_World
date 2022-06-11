@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { showToast } from "utilities";
+import { showToast } from "utils";
 import axios from "axios";
 import { useDocumentTitle } from "hooks";
 import { ThreeDots } from "react-loader-spinner";
-import { MailSent } from "Components";
+import { MailSent } from "components";
 
 export const ForgotPassword = () => {
   const [userEmail, setUserEmail] = useState("");
@@ -57,7 +57,11 @@ export const ForgotPassword = () => {
         </div>
         {isLoading ? (
           <div className="loader">
-            <ThreeDots width="50" color="blue" ariaLabel="loading-indicator" />
+            <ThreeDots
+              width="50"
+              color="yellow"
+              ariaLabel="loading-indicator"
+            />
           </div>
         ) : (
           <button
