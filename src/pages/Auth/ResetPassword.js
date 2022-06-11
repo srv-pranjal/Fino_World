@@ -4,6 +4,7 @@ import { useState } from "react";
 import { showToast } from "utils";
 import "./Auth.css";
 import { useDocumentTitle } from "hooks";
+import { Sidebar } from "components";
 
 export const ResetPassword = () => {
   const [user, setUser] = useState({
@@ -44,75 +45,78 @@ export const ResetPassword = () => {
   };
 
   return (
-    <main className="authentication">
-      <form onSubmit={resetPasswordHandler} className="authentication__form">
-        <h3 className="authentication__title">Reset Password</h3>
-        <p className="authentication__subtitle">Enter new password</p>
-        <div className="authentication__field">
-          <label>Password</label>
-          <div className="password-wrapper">
-            <input
-              className="input input--outlined"
-              placeholder="Password"
-              type={showPassword ? "text" : "password"}
-              required
-              value={user.password}
-              onChange={(e) => setUser({ ...user, password: e.target.value })}
-            />
-            <span
-              className="show-pwd"
-              onClick={() => setShowPassword((showPassword) => !showPassword)}
-            >
-              <i
-                className={showPassword ? "fa fa-eye" : "fa fa-eye-slash"}
-                aria-hidden="true"
-              ></i>
-            </span>
+    <div className="flex">
+      <Sidebar />
+      <main className="authentication">
+        <form onSubmit={resetPasswordHandler} className="authentication__form">
+          <h3 className="authentication__title">Reset Password</h3>
+          <p className="authentication__subtitle">Enter new password</p>
+          <div className="authentication__field">
+            <label>Password</label>
+            <div className="password-wrapper">
+              <input
+                className="input input--outlined"
+                placeholder="Password"
+                type={showPassword ? "text" : "password"}
+                required
+                value={user.password}
+                onChange={(e) => setUser({ ...user, password: e.target.value })}
+              />
+              <span
+                className="show-pwd"
+                onClick={() => setShowPassword((showPassword) => !showPassword)}
+              >
+                <i
+                  className={showPassword ? "fa fa-eye" : "fa fa-eye-slash"}
+                  aria-hidden="true"
+                ></i>
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="authentication__field">
-          <label>Confirm Password</label>
-          <div className="password-wrapper">
-            <input
-              className="input input--outlined"
-              placeholder="Confirm Password"
-              type={showConfirmPassword ? "text" : "password"}
-              required
-              value={user.confirmPassword}
-              onChange={(e) =>
-                setUser({ ...user, confirmPassword: e.target.value })
-              }
-            />
-            <span
-              className="show-pwd"
-              onClick={() =>
-                setShowConfirmPassword((showPassword) => !showPassword)
-              }
-            >
-              <i
-                className={
-                  showConfirmPassword ? "fa fa-eye" : "fa fa-eye-slash"
+          <div className="authentication__field">
+            <label>Confirm Password</label>
+            <div className="password-wrapper">
+              <input
+                className="input input--outlined"
+                placeholder="Confirm Password"
+                type={showConfirmPassword ? "text" : "password"}
+                required
+                value={user.confirmPassword}
+                onChange={(e) =>
+                  setUser({ ...user, confirmPassword: e.target.value })
                 }
-                aria-hidden="true"
-              ></i>
-            </span>
+              />
+              <span
+                className="show-pwd"
+                onClick={() =>
+                  setShowConfirmPassword((showPassword) => !showPassword)
+                }
+              >
+                <i
+                  className={
+                    showConfirmPassword ? "fa fa-eye" : "fa fa-eye-slash"
+                  }
+                  aria-hidden="true"
+                ></i>
+              </span>
+            </div>
           </div>
-        </div>
-        {user.confirmPassword.length > 0 &&
-          user.password.length > 0 &&
-          user.password !== user.confirmPassword && (
-            <p className="error-message">* Passwords do not match</p>
-          )}
+          {user.confirmPassword.length > 0 &&
+            user.password.length > 0 &&
+            user.password !== user.confirmPassword && (
+              <p className="error-message">* Passwords do not match</p>
+            )}
 
-        <button
-          className={
-            (user.password !== user.confirmPassword ? "btn--disabled" : "") +
-            " btn btn--primary authentication__btn"
-          }
-        >
-          SUBMIT
-        </button>
-      </form>
-    </main>
+          <button
+            className={
+              (user.password !== user.confirmPassword ? "btn--disabled" : "") +
+              " btn btn--primary authentication__btn"
+            }
+          >
+            SUBMIT
+          </button>
+        </form>
+      </main>
+    </div>
   );
 };

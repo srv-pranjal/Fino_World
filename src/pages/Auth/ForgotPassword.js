@@ -3,7 +3,7 @@ import { showToast } from "utils";
 import axios from "axios";
 import { useDocumentTitle } from "hooks";
 import { ThreeDots } from "react-loader-spinner";
-import { MailSent } from "components";
+import { MailSent, Sidebar } from "components";
 
 export const ForgotPassword = () => {
   const [userEmail, setUserEmail] = useState("");
@@ -34,44 +34,47 @@ export const ForgotPassword = () => {
 
   if (mailSent) return <MailSent />;
   return (
-    <div className="authentication">
-      <form
-        className="authentication__form forgot"
-        onSubmit={forgotPasswordHandler}
-      >
-        <h2>Forgot Password</h2>
-        <p className="authentication__subtitle forgot__msg">
-          Enter your email and we'll send a link on your email to reset your
-          password
-        </p>
-        <div className="authentication__field">
-          <label>Email</label>
-          <input
-            className="input input--outlined"
-            placeholder="Email"
-            type="email"
-            required
-            value={userEmail}
-            onChange={(e) => setUserEmail(e.target.value)}
-          />
-        </div>
-        {isLoading ? (
-          <div className="loader">
-            <ThreeDots
-              width="50"
-              color="yellow"
-              ariaLabel="loading-indicator"
+    <div className="flex">
+      <Sidebar />
+      <div className="authentication">
+        <form
+          className="authentication__form forgot"
+          onSubmit={forgotPasswordHandler}
+        >
+          <h2>Forgot Password</h2>
+          <p className="authentication__subtitle forgot__msg">
+            Enter your email and we'll send a link on your email to reset your
+            password
+          </p>
+          <div className="authentication__field">
+            <label>Email</label>
+            <input
+              className="input input--outlined"
+              placeholder="Email"
+              type="email"
+              required
+              value={userEmail}
+              onChange={(e) => setUserEmail(e.target.value)}
             />
           </div>
-        ) : (
-          <button
-            className="btn btn--primary authentication__btn forgot__btn"
-            type="submit"
-          >
-            SEND LINK
-          </button>
-        )}
-      </form>
+          {isLoading ? (
+            <div className="loader">
+              <ThreeDots
+                width="50"
+                color="yellow"
+                ariaLabel="loading-indicator"
+              />
+            </div>
+          ) : (
+            <button
+              className="btn btn--primary authentication__btn forgot__btn"
+              type="submit"
+            >
+              SEND LINK
+            </button>
+          )}
+        </form>
+      </div>
     </div>
   );
 };
