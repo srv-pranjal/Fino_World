@@ -1,0 +1,42 @@
+.playlist-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 20rem;
+}
+
+.playlist-card .card__img-container,
+.playlist-card .card__img-container > img {
+  border-radius: 0.3rem;
+  width: 18rem;
+  height: 10rem;
+}
+
+.playlist-card .card__img-container {
+  box-shadow: 0px 0px 5px var(--white-color);
+}
+
+.playlist-card .card__overlay {
+  display: flex;
+  cursor: pointer;
+  max-height: 10rem;
+  max-width: 4rem;
+  top: 0;
+  right: 0;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: var(--overlay-color);
+}
+.playlist-card .card__overlay > div {
+  gap: 0.5rem;
+}
+
+.playlist-card .card__content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-playlist {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
