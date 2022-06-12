@@ -4,3 +4,7 @@ export { Signup } from "./Auth/Signup";
 export { ForgotPassword } from "./Auth/ForgotPassword";
 export { ResetPassword } from "./Auth/ResetPassword";
 export { Profile } from "./Profile/Profile";
+export { PrivateRoutes } from "./PrivateRoutes/PrivateRoutes";
+export { WatchLater } from "./WatchLater/WatchLater";
+export { Playlists } from "./Playlists/Playlists";
+export { SinglePlaylist } from "./SinglePlaylist/SinglePlaylist";
