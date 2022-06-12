@@ -4,3 +4,4 @@ export { NothingToShow } from "./NothingToShow/NothingToShow";
 export { VideoListing } from "./VideoListing/VideoListing";
 export { VideoCard } from "./VideoCard/VideoCard";
 export { CategoryChip } from "./CategoryChip/CategoryChip";
+export { MailSent } from "./MailSent/MailSent";

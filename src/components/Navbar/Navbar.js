@@ -1,9 +1,10 @@
-import { useSidebar } from "contexts";
+import { useAuth, useSidebar } from "contexts";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
 export const Navbar = () => {
+  const { isLoggedIn, user } = useAuth();
   const { setIsSidebarHidden } = useSidebar();
   return (
     <header className="wrapper">
@@ -19,18 +20,24 @@ export const Navbar = () => {
         </em>
       </Link>
       <nav className="nav">
-        <ul className="nav__list">
-          <li className="nav__list-item">
-            <Link
-              to="/login"
-              className="btn btn--outline-primary login-btn"
-              role="button"
-            >
-              <i className="fa fa-user-circle "></i>
-              <span>Login</span>
-            </Link>
-          </li>
-        </ul>
+        {isLoggedIn ? (
+          <Link
+            to="/profile"
+            class="avatar avatar--xs avatar--primary"
+            title="Profile"
+          >
+            {user.firstName[0]}
+          </Link>
+        ) : (
+          <Link
+            to="/login"
+            className="btn btn--outline-primary login-btn"
+            role="button"
+          >
+            <i className="fa fa-user-circle "></i>
+            <span>Login</span>
+          </Link>
+        )}
       </nav>
     </header>
   );
