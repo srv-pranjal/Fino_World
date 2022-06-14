@@ -1,15 +1,31 @@
+import { useNavigate } from "react-router-dom";
 import {
   MdPlaylistAdd,
   MdOutlineWatchLater,
   MdShare,
+  MdTaskAlt,
   MdOutlineTimer,
 } from "react-icons/md";
 import { FaPlayCircle } from "react-icons/fa";
 import "./VideoCard.css";
-import { copyToClipboard } from "utils";
+import { addToWatchLater, removeFromWatchLater, copyToClipboard } from "utils";
+import { useAuth, usePlaylist } from "contexts";
 
-export const VideoCard = ({ video }) => {
+export const VideoCard = ({ video, openModal, setCurrentVideo }) => {
   const { _id, title, creator, creatorLogo, releaseDate, duration } = video;
+  const { watchlater, playlistDispatch } = usePlaylist();
+  const { isLoggedIn, token } = useAuth();
+
+  const navigate = useNavigate();
+
+  const addToPlaylistHandler = () => {
+    if (isLoggedIn) {
+      setCurrentVideo(video);
+      openModal();
+    } else {
+      navigate("/login", { replace: true });
+    }
+  };
 
   return (
     <article className="card card--vertical ">
@@ -24,11 +40,39 @@ export const VideoCard = ({ video }) => {
           alt={title}
         />
         <div className="card__icons">
-          <div title="Add To Watch Later" role="button">
-            <MdOutlineWatchLater />
-          </div>
+          {isLoggedIn ? (
+            watchlater.find(
+              (watchlaterVideo) => watchlaterVideo._id === _id
+            ) ? (
+              <div
+                title="Remove From Watch Later"
+                role="button"
+                onClick={() =>
+                  removeFromWatchLater(video, token, playlistDispatch)
+                }
+              >
+                <MdTaskAlt />
+              </div>
+            ) : (
+              <div
+                title="Add To Watch Later"
+                role="button"
+                onClick={() => addToWatchLater(video, token, playlistDispatch)}
+              >
+                <MdOutlineWatchLater />
+              </div>
+            )
+          ) : (
+            <div
+              title="Add To Watch Later"
+              role="button"
+              onClick={() => navigate("/login", { replace: true })}
+            >
+              <MdOutlineWatchLater />
+            </div>
+          )}
 
-          <div title="Add To Playlist">
+          <div title="Add To Playlist" onClick={addToPlaylistHandler}>
             <MdPlaylistAdd />
           </div>
 

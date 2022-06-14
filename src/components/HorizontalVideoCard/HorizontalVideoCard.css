@@ -1,0 +1,79 @@
+/* --- Horizontal Card ---*/
+
+.card--horizontal {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  border: 0.1rem solid var(--white-color);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card--horizontal .card__img-container {
+  flex-basis: 10rem;
+}
+.card--horizontal .card__img-container > img {
+  object-fit: cover;
+  border-radius: 0.3rem;
+  min-width: 18rem;
+}
+
+.card--horizontal .card__content {
+  margin-top: 0;
+  flex-direction: column;
+}
+
+.card--horizontal .card__overlay {
+  border-radius: 0.3rem;
+}
+
+.card--horizontal .card__description {
+  color: var(--grey-color);
+  padding: 0.5rem 0 0 0.5rem;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: none;
+}
+
+.card--horizontal .card__video-info {
+  margin-top: auto;
+}
+
+.card--horizontal .card__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  border-bottom-left-radius: 0.6rem;
+  border-top-right-radius: 0.5rem;
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.card--horizontal .card__creater {
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 34em) {
+  .card--horizontal {
+    flex-direction: column;
+  }
+
+  .card--horizontal .card__close-btn {
+    width: 3.5rem;
+    height: 2.5rem;
+    padding: 0.4rem 0;
+  }
+}

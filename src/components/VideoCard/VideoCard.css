@@ -103,3 +103,7 @@
 .card__img-container:hover .card__overlay {
   display: flex;
 }
+
+.modal-wrapper.playlist-modal {
+  display: none;
+}

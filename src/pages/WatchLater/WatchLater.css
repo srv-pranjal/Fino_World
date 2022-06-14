@@ -1,0 +1,47 @@
+.video {
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.video__heading-container {
+  background-color: var(--transparent-background-color);
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.video__heading-container::before {
+  content: "";
+  height: 6.25rem;
+  right: 0;
+  bottom: 0rem;
+  position: absolute;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 0.15rem solid var(--primary-color);
+  background-color: var(--primary-color);
+  transform: scaleX(1);
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.video__heading {
+  font-size: 2rem;
+}
+.video__sub-heading{
+    margin: 0.25rem 0 0 0.25rem;
+    font-size: 1.1rem;
+}
+.video__list{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 34em) {
+    .video__list{
+        margin: 1rem 0;        
+    }
+  }
+  

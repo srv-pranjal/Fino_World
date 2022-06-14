@@ -5,3 +5,7 @@ export { VideoListing } from "./VideoListing/VideoListing";
 export { VideoCard } from "./VideoCard/VideoCard";
 export { CategoryChip } from "./CategoryChip/CategoryChip";
 export { MailSent } from "./MailSent/MailSent";
+export { HorizontalVideoCard } from "./HorizontalVideoCard/HorizontalVideoCard";
+export { PlaylistCard } from "./PlaylistCard/PlaylistCard";
+export { Modal } from "./Modal/Modal";
+export { PlaylistModal } from "./PlaylistModal/PlaylistModal";

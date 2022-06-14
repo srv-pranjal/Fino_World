@@ -1,3 +1,12 @@
 export { showToast } from "./showToast";
 export { getCategoryFilteredData } from "./VideoUtils/getCategoryFilteredData";
 export { copyToClipboard } from "./copyToClipboard";
+export { addToWatchLater } from "./WatchLaterUtils/addToWatchLater";
+export { isVideoInWatchLater } from "./WatchLaterUtils/isVideoInWatchLater";
+export { removeFromWatchLater } from "./WatchLaterUtils/removeFromWatchLater";
+export { createNewPlaylist } from "./PlaylistUtils/createNewPlaylist";
+export { removePlaylist } from "./PlaylistUtils/removePlaylist";
+export { addVideoToPlaylist } from "./PlaylistUtils/addVideoToPlaylist";
+export { removeVideoFromPlaylist } from "./PlaylistUtils/removeVideoFromPlaylist";
+export { isVideoInPlaylist } from "./PlaylistUtils/isVideoInPlaylist";
+export { getPlaylistFromPlaylistId } from "./PlaylistUtils/getPlaylistFromPlaylistId";

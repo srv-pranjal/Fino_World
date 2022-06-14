@@ -17,6 +17,7 @@ button {
   --grey-color: #aaaaaa;
   --background-color: #1f1d2b;
   --dark-background-color: #1a1922;
+  --transparent-color: rgba(0, 0, 0, 0.1);
 }
 .section {
   margin: 2rem auto;
