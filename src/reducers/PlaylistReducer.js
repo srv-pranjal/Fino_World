@@ -19,6 +19,24 @@ export const PlaylistReducer = (playlistState, { type, payload }) => {
             : playlist
         ),
       };
+    case "UPDATE_HISTORY":
+      return {
+        ...playlistState,
+        history: payload,
+      };
+    case "PUSH_VIDEO_TO_TOP":
+      return {
+        ...playlistState,
+        history: [
+          payload,
+          ...playlistState.history.filter(({ _id }) => _id !== payload._id),
+        ],
+      };
+    case "UPDATE_LIKED_VIDEOS":
+      return {
+        ...playlistState,
+        likedVideos: payload,
+      };
     default:
       return playlistState;
   }
