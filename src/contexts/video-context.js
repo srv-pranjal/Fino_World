@@ -1,20 +1,25 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { showToast } from "utils";
+import { useLoader } from "./loader-context";
 
 const VideoContext = createContext();
 
 const VideoProvider = ({ children }) => {
   const [videoList, setVideoList] = useState([]);
   const [categories, setCategories] = useState([]);
+  const { setShowLoader } = useLoader();
 
   useEffect(() => {
     (async () => {
       try {
+        setShowLoader(true);
         const categoryResponse = await axios.get("/api/categories");
         setCategories(categoryResponse.data.categories);
       } catch (error) {
         showToast("error", "Error Occurred while loading Categories");
+      } finally {
+        setShowLoader(false);
       }
     })();
   }, []);
@@ -30,7 +35,7 @@ const VideoProvider = ({ children }) => {
         showToast("error", "Error Occurred while loading Videos");
       }
     })();
-  }, []);
+  }, [setVideoList]);
 
   return (
     <VideoContext.Provider value={{ videoList, categories }}>
