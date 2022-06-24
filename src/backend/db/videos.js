@@ -78,7 +78,7 @@ export const videos = [
       "How to invest INR 10,000 per month in a mutual fund? #MutualFunds #InvestmentTips",
     description: `Mutual Fund can seem a little confusing to novice investors. You might have received a number of calls from agents trying to convince you to invest in their mutual fund, and all that can become too overwhelming!
 
-      So on this video, I try to explain the concept of mutual funds in a very simplified manner`,
+So on this video, I try to explain the concept of mutual funds in a very simplified manner`,
     duration: "26:24",
     releaseDate: "Jul 9, 2021",
   },
@@ -100,11 +100,14 @@ export const videos = [
     categoryName: "Mutual Funds",
     creator: "The Urban Fight",
     creatorLogo:
-      "https://yt3.ggpht.com/UPRXxY8jCeS0O-guKb6rtVtgbu38dxFfeH8yV2Nc4jNfspYK2fVQ72bbPHqEaBoqE-bT9SxUFgk=s88-c-k-c0x00ffffff-no-rj",
+      "https://yt3.ggpht.com/rpjH00EnPPlA7yOCqJGCy3b45M-CyFAjIXpCuiiVXw9VPLAgK9kGT_F8LBRMfoA5T5Fpd-VB9Q=s68-c-k-c0x00ffffff-no-rj",
 
     title:
       "What are Mutual Funds and How to Select and Buy Mutual Funds in 2022?",
-    description: `The problem with investments is.… Property prices are too high. FDs interest rates are too low. And you don’t want to buy jewellery.
+    description: `The problem with investments is.… 
+
+      Property prices are too high. FDs interest rates are too low. And you don’t want to buy jewellery.
+
       But what if I tell you that there is a solution. Yes, I’m talking about Mutual funds. The same one that are subject to market risk, so you need to read the scheme related document carefully before investing. :)
       
       But WHAT is this risk? How are people still making money with Mutual Funds? I know you had all these questions and more when you clicked on this video. So ladies and gentlemen, it’s okay if you don’t know anything about Mutual Funds, because in today’s video, we are going to see…
@@ -112,9 +115,9 @@ export const videos = [
       Today’s Agenda:
       
       1)  What are Mutual Funds and what are the different types?
-      2) 4 Rapid Fire Facts that you must know before getting started.
-      3) A step by step tutorial where I’ll show you how to buy a Mutual Fund using Zerodha’s Coin.
-      4) And towards the end, I’ll give you a Bonus Tip that’ll help you convert your time into actual money. 
+      2)  4 Rapid Fire Facts that you must know before getting started.
+      3)  A step by step tutorial where I’ll show you how to buy a Mutual Fund using Zerodha’s Coin.
+      4)  And towards the end, I’ll give you a Bonus Tip that’ll help you convert your time into actual money. 
        
       Just so that we are clear, no Mutual Fund is sponsoring this video. So I don’t care which MF you choose. I’ll just give you the right information, as if I am talking to my younger siblings about investments. And I hope it helps you learn something too.
       `,
@@ -146,15 +149,15 @@ export const videos = [
       "What is the reality of Bitcoin? | Best Cryptocurrency? | Investing for Beginners | Ankur Warikoo",
     description: `Is investing in bitcoin legal in India?
 
-       Should you invest in bitcoin as a beginner?
-       
-       Friends, today we will talk about bitcoin as a currency, and how it has evolved over the time. We will also address how you can invest in it, what are the pros and cons of it, and if it is advisable for you to invest in it as a beginner?
-       
-       It comes with a lot of advantages and also with a lot of things you need to pay attention to, while investing. 
-       
-       #cryptocurrency #investmenttips
-       
-       This video will explain to you all that, and if there is something you would like to add to what I said in this video, please share that in the comments section.
+Should you invest in bitcoin as a beginner?
+
+Friends, today we will talk about bitcoin as a currency, and how it has evolved over the time. We will also address how you can invest in it, what are the pros and cons of it, and if it is advisable for you to invest in it as a beginner?
+
+It comes with a lot of advantages and also with a lot of things you need to pay attention to, while investing. 
+
+#cryptocurrency #investmenttips
+
+This video will explain to you all that, and if there is something you would like to add to what I said in this video, please share that in the comments section.
        `,
     duration: "14:37",
     releaseDate: "Jan 26, 2021",
@@ -169,7 +172,7 @@ export const videos = [
     title: "Fundamental Analysis of Cryptocurrencies",
     description: `Cryptocurrency is a super complex subject. And investment in cryptos can be even more complex. You might invest in bad ones and lose a lot of money, or you might not even invest in any!
 
-      So in this video, I explain one key component that you must understand when you are looking to invest in cryptos. I also throw light on which are the top three cryptos I am investing in and why.`,
+So in this video, I explain one key component that you must understand when you are looking to invest in cryptos. I also throw light on which are the top three cryptos I am investing in and why.`,
     duration: "20:28",
     releaseDate: "Aug 1, 2021",
   },
@@ -196,7 +199,7 @@ export const videos = [
     title: "How To Invest In Crypto Full Beginners Guide in 2022",
     description: `This is the ULTIMATE Guide on how to get started in cryptocurrency investing for beginners.
 
-       I recommend signing up for multiple brokerages as mentioned in the video. Some platforms have coins listed on the exchange unlike others and give you the ability to still trade if one goes under for maintenance like we have seen before in the past.`,
+I recommend signing up for multiple brokerages as mentioned in the video. Some platforms have coins listed on the exchange unlike others and give you the ability to still trade if one goes under for maintenance like we have seen before in the past.`,
     duration: "19:47",
     releaseDate: "Jan 7, 2021",
   },
@@ -236,7 +239,7 @@ export const videos = [
     title: "One year into NFTs — what I wish I knew when I started",
     description: `In this video I reflect on some key lessons that I've learned after being full time in NFTs for over a year. 
 
-      These are some insights based on my own experience - don't take them as fact and always do your own research. `,
+These are some insights based on my own experience - don't take them as fact and always do your own research. `,
     duration: "13:42",
     releaseDate: "Mar 31, 2022",
   },
@@ -263,9 +266,9 @@ export const videos = [
       "One of the best stocks to buy RIGHT NOW | Complete Fundamental, Business and Technical Analysis",
     description: `India is a country where many companies think they have a mass market to cater to. 
 
-      But a big chunk of these firms fails in doing so because of the diversity of this market.
-      
-      In this video, I talk about one company that is a market leader in its domain. And which has been answering the needs of the Indians in a very efficient manner.`,
+But a big chunk of these firms fails in doing so because of the diversity of this market.
+
+In this video, I talk about one company that is a market leader in its domain. And which has been answering the needs of the Indians in a very efficient manner.`,
     duration: "19:00",
     releaseDate: "May 22, 2022",
   },
@@ -303,11 +306,11 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLQij4mjnGU5Mkn1EMxVRGsAjdTNjR7pF8-bFngzYQ=s88-c-k-c0x00ffffff-no-rj",
 
     title: "Market ki Baat with Saurabh Mukherjea & Neeraj Arora | Episode 1",
-    description: `In the first episode of Market ki Baat, Groww ke Saath, host Neeraj Arora will speak to Saurabh   Mukherjea  –  Founder and CIO of Marcellus Investment Managers Pvt Ltd. about his investment philosophy and investment strategy ‘Consistent Compounders'.
+    description: `In the first episode of Market ki Baat, Groww ke Saath, host Neeraj Arora will speak to Saurabh Mukherjea – Founder and CIO of Marcellus Investment Managers Pvt Ltd. about his investment philosophy and investment strategy ‘Consistent Compounders'.
 
-      Saurabh shares his views on inflationary concerns, macroeconomic factors, and potential correction in the market due to recession fears. Saurabh also shares some of the key components an investor can look for to analyze the governance of a company, He will share his views on IPOs and how to analyze an IPO stock. 
-      
-      Later Saurabh will share his views on the portfolio of a Groww user and answer some rapid-fire questions. Neeraj will conclude the show by sharing key learnings from today’s conversation according to him.`,
+Saurabh shares his views on inflationary concerns, macroeconomic factors, and potential correction in the market due to recession fears. Saurabh also shares some of the key components an investor can look for to analyze the governance of a company, He will share his views on IPOs and how to analyze an IPO stock. 
+
+Later Saurabh will share his views on the portfolio of a Groww user and answer some rapid-fire questions. Neeraj will conclude the show by sharing key learnings from today’s conversation according to him.`,
     duration: "1:02:41",
     releaseDate: "Jun 5, 2022",
   },
