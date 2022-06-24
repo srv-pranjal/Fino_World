@@ -30,7 +30,10 @@ export const VideoCard = ({ video, openModal, setCurrentVideo }) => {
   return (
     <article className="card card--vertical ">
       <div className="card__img-container">
-        <div className="card__overlay">
+        <div
+          className="card__overlay"
+          onClick={() => navigate(`/video/${_id}`)}
+        >
           <FaPlayCircle />
           <span>Play</span>
         </div>

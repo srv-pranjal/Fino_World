@@ -39,6 +39,15 @@
     gap: 2rem;
 }
 
+.video .btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.video .btn:hover {
+  color: var(--black-color);
+}
+
 @media only screen and (max-width: 34em) {
     .video__list{
         margin: 1rem 0;        
