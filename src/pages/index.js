@@ -8,3 +8,6 @@ export { PrivateRoutes } from "./PrivateRoutes/PrivateRoutes";
 export { WatchLater } from "./WatchLater/WatchLater";
 export { Playlists } from "./Playlists/Playlists";
 export { SinglePlaylist } from "./SinglePlaylist/SinglePlaylist";
+export { SingleVideo } from "./SingleVideo/SingleVideo";
+export { Liked } from "./Liked/Liked";
+export { History } from "./History/History";

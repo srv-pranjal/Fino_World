@@ -4,12 +4,7 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
-import {
-  AuthProvider,
-  PlaylistProvider,
-  SidebarProvider,
-  VideoProvider,
-} from "contexts";
+import { WrapperProviders } from "components";
 
 // Call make Server
 makeServer();
@@ -17,15 +12,9 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <AuthProvider>
-        <PlaylistProvider>
-          <VideoProvider>
-            <SidebarProvider>
-              <App />
-            </SidebarProvider>
-          </VideoProvider>
-        </PlaylistProvider>
-      </AuthProvider>
+      <WrapperProviders>
+        <App />
+      </WrapperProviders>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

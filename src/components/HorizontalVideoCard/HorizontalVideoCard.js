@@ -1,10 +1,11 @@
 import { FaPlayCircle } from "react-icons/fa";
 import { MdOutlineClose, MdOutlineTimer } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 import "./HorizontalVideoCard.css";
 
 export const HorizontalVideoCard = ({ video, removeHandler, handlerArgs }) => {
   const { _id, title, creator, description, releaseDate, duration } = video;
-
+  const navigate = useNavigate();
   return (
     <article className="card card--horizontal ">
       <div
@@ -15,7 +16,10 @@ export const HorizontalVideoCard = ({ video, removeHandler, handlerArgs }) => {
         <MdOutlineClose />
       </div>
       <div className="card__img-container">
-        <div className="card__overlay">
+        <div
+          className="card__overlay"
+          onClick={() => navigate(`/video/${_id}`)}
+        >
           <FaPlayCircle />
           <span>Play</span>
         </div>

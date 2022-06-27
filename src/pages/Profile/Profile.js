@@ -1,5 +1,5 @@
 import { Sidebar } from "components";
-import { useAuth } from "contexts";
+import { useAuth, useLoader } from "contexts";
 import { useNavigate } from "react-router-dom";
 import "./Profile.css";
 import { FaUser } from "react-icons/fa";
@@ -7,12 +7,16 @@ import { showToast } from "utils";
 export const Profile = () => {
   const { user, authDispatch } = useAuth();
   const navigate = useNavigate();
-
+  const { setShowLoader } = useLoader();
   const logoutHandler = () => {
+    setShowLoader(true);
+    setTimeout(() => {
+      setShowLoader(false);
+      navigate("/login", { replace: true });
+    }, 1000);
     localStorage.clear();
     authDispatch({ type: "LOGOUT" });
     showToast("info", "Logged Out Successfully");
-    navigate("/login", { replace: true });
   };
 
   return (
@@ -22,7 +26,7 @@ export const Profile = () => {
         <article className="profile__card card">
           <p className="profile__heading">My Profile</p>
           <div className="background">
-            <div class="avatar avatar--xs avatar--primary">
+            <div className="avatar avatar--xs avatar--primary">
               <FaUser />
             </div>
           </div>

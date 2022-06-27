@@ -9,3 +9,5 @@ export { HorizontalVideoCard } from "./HorizontalVideoCard/HorizontalVideoCard";
 export { PlaylistCard } from "./PlaylistCard/PlaylistCard";
 export { Modal } from "./Modal/Modal";
 export { PlaylistModal } from "./PlaylistModal/PlaylistModal";
+export { Loader } from "./Loader/Loader";
+export { WrapperProviders } from "./WrapperProviders/WrapperProviders";
