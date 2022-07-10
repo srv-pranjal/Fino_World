@@ -23,7 +23,7 @@ export const Navbar = () => {
         {isLoggedIn ? (
           <Link
             to="/profile"
-            class="avatar avatar--xs avatar--primary"
+            className="avatar avatar--xs avatar--primary"
             title="Profile"
           >
             {user.firstName[0]}

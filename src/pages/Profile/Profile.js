@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Profile.css";
 import { FaUser } from "react-icons/fa";
 import { showToast } from "utils";
+import { useDocumentTitle } from "hooks";
 export const Profile = () => {
   const { user, authDispatch } = useAuth();
   const navigate = useNavigate();
@@ -18,6 +19,8 @@ export const Profile = () => {
     authDispatch({ type: "LOGOUT" });
     showToast("info", "Logged Out Successfully");
   };
+
+  useDocumentTitle("My Profile | Fino World");
 
   return (
     <div className="flex">

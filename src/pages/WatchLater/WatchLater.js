@@ -2,10 +2,14 @@ import { HorizontalVideoCard, NothingToShow, Sidebar } from "components";
 import { useAuth, usePlaylist } from "contexts";
 import "./WatchLater.css";
 import { removeFromWatchLater } from "utils";
+import { useDocumentTitle } from "hooks";
 
 export const WatchLater = () => {
   const { watchlater, playlistDispatch } = usePlaylist();
   const { token } = useAuth();
+
+  useDocumentTitle("WatchLater | Fino World");
+
   return (
     <div className="flex">
       <Sidebar />

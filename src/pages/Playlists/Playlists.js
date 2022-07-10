@@ -1,10 +1,14 @@
 import { PlaylistCard, Sidebar } from "components";
 import { usePlaylist } from "contexts";
+import { useDocumentTitle } from "hooks";
 
 import "./Playlists.css";
 
 export const Playlists = () => {
   const { watchlater, likedVideos, playlists } = usePlaylist();
+
+  useDocumentTitle("Playlists | Fino World");
+
   return (
     <div className="flex">
       <Sidebar />
