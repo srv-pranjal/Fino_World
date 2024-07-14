@@ -3,7 +3,7 @@
  * You can add videos of your wish with different attributes
  * */
 
-export const videos = [
+ export const videos = [
   {
     _id: "3UF0ymVdYLA",
     categoryName: "Stock Market",
@@ -36,7 +36,7 @@ export const videos = [
     categoryName: "Finance",
     creator: "warikoo",
     creatorLogo:
-      "https://yt3.ggpht.com/X9eoDIB9cgb1s-kvATRs1lQDcU4Fjc15NDV9s9FF8ck7IsA8u7OdijaernoDV9LLdePgjlt_=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/f1fwkaQTc8pFCbxjWjPVG7bzolx8_JhtgvMdDRz8F_OUeA-3SJxfJKWmVBzik4KuPOSb2wMC=s160-c-k-c0x00ffffff-no-rj",
 
     title:
       "Complete Financial Planning for your 20s! | Investing for Beginners 2021 | Ankur Warikoo Hindi",
@@ -72,7 +72,7 @@ export const videos = [
     categoryName: "Mutual Funds",
     creator: "Akshat Shrivastava",
     creatorLogo:
-      "https://yt3.ggpht.com/VI0OvMwpPQPFGoHAQOHsvtEcFWg-_YzFBhoeohr2CRz1T21Ja4unTGte1Gz6TnDUgVX9wcOG=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/ErG-whUmcqnEZfbrhdV1SqmwkNrYK0zd2nTKipi5xZ67MCEaugMaczmI2YRlYyW0-AG8xhZ6dQ=s160-c-k-c0x00ffffff-no-rj",
 
     title:
       "How to invest INR 10,000 per month in a mutual fund? #MutualFunds #InvestmentTips",
@@ -143,7 +143,7 @@ So on this video, I try to explain the concept of mutual funds in a very simplif
     categoryName: "Crypto",
     creator: "warikoo",
     creatorLogo:
-      "https://yt3.ggpht.com/X9eoDIB9cgb1s-kvATRs1lQDcU4Fjc15NDV9s9FF8ck7IsA8u7OdijaernoDV9LLdePgjlt_=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/f1fwkaQTc8pFCbxjWjPVG7bzolx8_JhtgvMdDRz8F_OUeA-3SJxfJKWmVBzik4KuPOSb2wMC=s160-c-k-c0x00ffffff-no-rj",
 
     title:
       "What is the reality of Bitcoin? | Best Cryptocurrency? | Investing for Beginners | Ankur Warikoo",
@@ -161,20 +161,6 @@ This video will explain to you all that, and if there is something you would lik
        `,
     duration: "14:37",
     releaseDate: "Jan 26, 2021",
-  },
-  {
-    _id: "Pbx31ib6gT4",
-    categoryName: "Crypto",
-    creator: "Akshat Shrivastava",
-    creatorLogo:
-      "https://yt3.ggpht.com/VI0OvMwpPQPFGoHAQOHsvtEcFWg-_YzFBhoeohr2CRz1T21Ja4unTGte1Gz6TnDUgVX9wcOG=s68-c-k-c0x00ffffff-no-rj",
-
-    title: "Fundamental Analysis of Cryptocurrencies",
-    description: `Cryptocurrency is a super complex subject. And investment in cryptos can be even more complex. You might invest in bad ones and lose a lot of money, or you might not even invest in any!
-
-So in this video, I explain one key component that you must understand when you are looking to invest in cryptos. I also throw light on which are the top three cryptos I am investing in and why.`,
-    duration: "20:28",
-    releaseDate: "Aug 1, 2021",
   },
   {
     _id: "Helf3Ku8kho",
@@ -260,7 +246,7 @@ These are some insights based on my own experience - don't take them as fact and
     categoryName: "Stock Market",
     creator: "Akshat Shrivastava",
     creatorLogo:
-      "https://yt3.ggpht.com/VI0OvMwpPQPFGoHAQOHsvtEcFWg-_YzFBhoeohr2CRz1T21Ja4unTGte1Gz6TnDUgVX9wcOG=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/ErG-whUmcqnEZfbrhdV1SqmwkNrYK0zd2nTKipi5xZ67MCEaugMaczmI2YRlYyW0-AG8xhZ6dQ=s160-c-k-c0x00ffffff-no-rj",
 
     title:
       "One of the best stocks to buy RIGHT NOW | Complete Fundamental, Business and Technical Analysis",
@@ -271,19 +257,6 @@ But a big chunk of these firms fails in doing so because of the diversity of thi
 In this video, I talk about one company that is a market leader in its domain. And which has been answering the needs of the Indians in a very efficient manner.`,
     duration: "19:00",
     releaseDate: "May 22, 2022",
-  },
-  {
-    _id: "qzf_xBbS9uo",
-    categoryName: "Finance",
-    creator: "TechLead",
-    creatorLogo:
-      "https://yt3.ggpht.com/ytc/AKedOLTA-k0TzhGuBIVTQ9S0C0Mc6BsIUFLHjz1Np5XDbQ=s88-c-k-c0x00ffffff-no-rj",
-
-    title: "Financial Independence: What no one tells you (as a millionaire)",
-    description:
-      "A lot of people think that 'working' is a means to put a roof over your head, to put food on your table, to support your family.  It's not quite like that really, since after about $20k/year in income, most people already have fulfilled their basic survival needs.  So what is money and financial independence really about?",
-    duration: "10:42",
-    releaseDate: "Jul 23, 2020",
   },
   {
     _id: "7oj6gpAbYgw",
